@@ -3,7 +3,7 @@ fh = open(fname)
 lst = list()
 for line in fh:
   words = line #so that i am able to modify it
-  count = line.count(" ")
+  count = words.count(" ")
   while count>0:
     word = words[:words.index(" ")]
     lst.append(word.lower())
