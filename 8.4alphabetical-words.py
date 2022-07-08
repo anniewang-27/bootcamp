@@ -2,7 +2,7 @@ fname = input("Enter file name: ")
 fh = open(fname)
 lst = list()
 for line in fh:
-  words = line.rstrip() #so that i am able to modify it
+  words = line #so that i am able to modify it
   count = line.count(" ")
   while count>0:
     word = words[:words.index(" ")]
